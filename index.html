@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>점심 메뉴 추천</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🍽️ 점심 메뉴 추천</h1>
+            <p class="subtitle">오늘 점심 뭐 먹을지 고민이라면?</p>
+        </header>
+
+        <main>
+            <!-- 카테고리 필터 -->
+            <div class="category-filter">
+                <button class="category-btn active" data-category="all">전체</button>
+                <button class="category-btn" data-category="한식">한식</button>
+                <button class="category-btn" data-category="중식">중식</button>
+                <button class="category-btn" data-category="일식">일식</button>
+                <button class="category-btn" data-category="양식">양식</button>
+                <button class="category-btn" data-category="분식">분식</button>
+                <button class="category-btn" data-category="아시안">아시안</button>
+            </div>
+
+            <!-- 추천 결과 -->
+            <div class="recommendation-card">
+                <div class="menu-emoji" id="menuEmoji">🤔</div>
+                <h2 class="menu-name" id="menuName">메뉴를 추천받아보세요!</h2>
+                <p class="menu-category" id="menuCategory"></p>
+                <p class="menu-description" id="menuDescription">아래 버튼을 눌러 오늘의 점심 메뉴를 추천받으세요.</p>
+            </div>
+
+            <!-- 추천 버튼 -->
+            <button class="recommend-btn" id="recommendBtn">
+                🎲 메뉴 추천받기
+            </button>
+
+            <!-- 추천 기록 -->
+            <div class="history-section">
+                <h3>최근 추천 기록</h3>
+                <div class="history-list" id="historyList">
+                    <p class="empty-message">아직 추천 기록이 없습니다.</p>
+                </div>
+                <button class="clear-history-btn" id="clearHistoryBtn">기록 삭제</button>
+            </div>
+        </main>
+
+        <footer>
+            <p>Made with ❤️ for better lunch decisions</p>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
